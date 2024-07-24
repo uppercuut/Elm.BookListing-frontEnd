@@ -48,7 +48,7 @@ export class AppComponent {
   constructor(private booksServiceService: BooksServiceService) {
 
     this.searchedTyped
-      .pipe(debounceTime(700), distinctUntilChanged())
+      .pipe(debounceTime(400), distinctUntilChanged())
       .subscribe((value) => {
 
         this.currentPage =1;
