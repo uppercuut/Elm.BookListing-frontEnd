@@ -1,27 +1,35 @@
-# ElmBookListing
+## Test Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+You are required to implement a dynamic web application that allows public users to smoothly search for books. The user interface should be simple and intuitive, featuring a single input field where users can input relevant book information. As the user types into this field, the application should dynamically display book records that match the entered text based on the title, author, publication date, or description.
 
-## Development server
+## Technical Expectations
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Your application should demonstrate:
 
-## Code scaffolding
+- **Responsiveness and Efficiency:** The application should be optimized for both bandwidth and responsiveness to ensure a smooth user experience. You may consider implementing indexing or caching techniques to improve performance.
+- **Security:** Implement best practices for input validation and protection against malicious attacks and vulnerabilities.
+- **Architecture:** The solution should demonstrate best practices for layered structure, reusability, and inversion of control.
+- **Frontend:** The frontend should be implemented using Angular 16.
+- **Backend:** The backend should be implemented using .Net Core v6. 
+- **Database:** We strongly prefer using Dapper for DB access over any other ORM technology.
+- **Pagination:** The search results should implement a 'load-more' pagination approach, triggered when the user scrolls down.
+- **Comprehensive Results:** Each result record should display all book information, including the book image.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Note: You should expect that at the time of task assessment, we will be running your solution on our own data seed which might have much larger number of records*
 
-## Build
+## Environment Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Required tools include:
 
-## Running unit tests
+- Visual Studio 2022
+- SQL Server 2019 (or later) installed in mixed-mode authentication
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Please note that while you may add new tables to the database, modifications to the initial structure or initial data seed are not permitted.
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Open the solution in Visual Studio 2022.
+2. Modify the `appsettings.json` for the `Migrations` project and run it (it might take a while to finish).
+3. The project should create an SQL server database and seed it with random data.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+We look forward to seeing your creative approach to this project! Your solution will provide valuable insight into your skills and approach to web development. Good luck!
